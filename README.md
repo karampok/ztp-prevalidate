@@ -20,6 +20,8 @@ It is just a bash script but you will need:
 
 - Connectivity to Openshift cluster (export KUBECONFIG=kubeconfig). You need this, because it will validate the generated Openshift/Kubernetes resources with the Openshift/Kubernetes API. Dont worry, it is just testing and it dont not persist anything in your cluster.
 
+- kustomize
+
 ### Executing the script
 
 You can just run the script on a directory containing a 'kustomization.yaml' file, which points to other yamls files. These files will be Manifests with Siteconfig or PolicyGenTemplate resources.
